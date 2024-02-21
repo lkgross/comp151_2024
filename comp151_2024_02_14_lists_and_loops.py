@@ -47,6 +47,42 @@ for i in range(10):
 
 print()
 
-# Another to print 1, 3, 5, 7, 9.
+# Another way to print 1, 3, 5, 7, 9.
 for i in range(5):
     print(1 + 2 * i)
+
+print()
+
+for number in range(1, 11, 2):
+    print(number**2)
+
+print()
+
+# List comprehension
+values = [number**2 for number in range(1, 11, 2)]
+print(values)
+
+print()
+
+# Loop through a list index-by-index.
+
+for i in range(len(family)):
+    print(family[i])
+
+print()
+
+prizes = ['cupcake', 'cash', 'house']
+values = [2.0, 200, 200_000]
+
+# for prize in prizes:
+
+for i in range(len(prizes)):
+    print(f"The prize {prizes[i]} is worth ${values[i]}.")
+
+print()
+
+comments = []
+for i in range(len(prizes)):
+    comments.append(f"The prize {prizes[i]} is worth ${values[i]}.")
+
+print(comments)
