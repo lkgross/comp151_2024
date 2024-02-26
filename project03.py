@@ -1,3 +1,5 @@
+# Starting code by Dr. Laura Gross,2/26/2024, laura.gross@bridgew.edu
+# Modified by name, date, email
 A = 4
 B = 3
 C = 2
