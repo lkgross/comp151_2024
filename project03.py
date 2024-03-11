@@ -6,14 +6,14 @@ C = 2
 D = 1
 F = 0
 grades = ['F', 'D', 'C', 'B', 'A']
-student_records = [['Alejandra Dani', [B, D, B, B, A]],
+student_records = [['Alejandra Dani', [F, D, B, B, A]],
                    ['Nayeli Cora', [C, D, A, D, B]],
                    ['Hazel Kaia', [A, A, C, B, A]],
                    ['Emma Jude', [B, A, B, A, B]]]
-print(f"Emma's record: {student_records[0]}")
-print(f"Emma's grades: {student_records[0][1]}")
+print(f"Alejandra's record: {student_records[0]}")
+print(f"Alejandra's grades: {student_records[0][1]}")
 student_records[0][1][0] = B
-print(f"Emma's grades: {student_records[0][1]}")
+print(f"Alejandra's grades: {student_records[0][1]}")
 student_grades = []
 for grade_report in student_records:
     # print(grade_report)
