@@ -43,5 +43,29 @@ elif age < 54:
 else:
     print("You are the same age as your professor.")
 
+print()
 
+print(classes)
 
+print()
+
+# Code: if classes has any elements,
+# (if classes is not the empty list)
+# then you have to take classes
+if classes:
+    print("You need to take classes.")
+
+print()
+
+if 'COMP250' in classes:
+    print("You need to take COMP 250.")
+if 'MATH095' in classes:
+    print("You need to take MATH 095.")
+if not('MATH095' in classes):
+    print("You don't need to take MATH 095.")
+
+print()
+
+if classes:
+    for course in classes:
+        print(course)
