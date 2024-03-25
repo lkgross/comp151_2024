@@ -22,7 +22,14 @@ if tip < 2:
 print()
 
 print("You are lost in a scary maze.")
+# RESPONSE IS GIVEN AN INITIAL VALUE
+# to prevent an error when the condition
+# for the while loop is first evaluated.
 response = input("Will you go left or right? ")
+# The loop condition has one variable: response
 while response == "left":
+    # LOOP VARIABLE(S) MUST BE UPDATED IN THE
+    # BODY OF THE WHILE LOOP!
+    # This avoids an infinite loop.
     response = input("Will you go left or right? ")
 print("You fall in a pit. You lose.")
