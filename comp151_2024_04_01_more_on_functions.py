@@ -21,7 +21,7 @@ def more_points_than_dealer(player_points):
 
 
 def yell(mascot, repetitions):
-    """Print a cheer for mascot."""
+    """Print a cheer for mascot, repetitions number of times."""
     for i in range(repetitions):
         print(f"Go!\nGo, {mascot}!")
 
@@ -44,6 +44,7 @@ def more_points_than_dealer2(player_points, dealer_points):
 
 
 def player_has_more(player_points, dealer_points):
+    """Return whether player_points is greater than dealer_points."""
     return player_points > dealer_points
 
 
@@ -58,10 +59,13 @@ def gpa(As, Bs, Cs, Ds, Fs):
     Ds D grades and Fs F grades in classes that are all worth the same number of credits."""
     return (4.0 * As + 3.0 * Bs + 2.0 * Cs + 1.0 * Ds) / (
                 As + Bs + Cs + Ds + Fs)
+    # Once you return from a function, you've left the function!
+    # This line will never execute:
+    print("Good job!")
 
 
-print(gpa(2, 2, 1, 0, 0))
-print(player_has_more(17, 19))
+# print(gpa(2, 2, 1, 0, 0))
+print(player_has_more(player_points=23, dealer_points=19))
 
 # pick_a_name(["Nathan", "Jared", "Jack", "Luiz", "Alex"])
 # print(index)
